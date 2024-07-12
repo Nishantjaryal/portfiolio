@@ -540,10 +540,18 @@ overflow: hidden;
 .align-top{
     align-items: flex-start;
 }
+.left{
+  background-image: none;
+}
 }
 
 
 @media screen and (max-width: 500px) {
+
+  .mob-top-20{
+    position: relative;
+    top:-20px
+  }
   
   .mob-view {
     display: block;
@@ -551,9 +559,13 @@ overflow: hidden;
   .pc-view {
     display: none;
   }
+  .spc{
+    padding: 7px 25px;
+
+  }
   .h1lnhgt{
     font-size: 8vh;
-    padding: 10px;
   }
+  
 
 }
