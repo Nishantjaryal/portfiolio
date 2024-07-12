@@ -2,7 +2,7 @@ const menuBtn = document.querySelector(".nav-pc-btn")
 const marks = document.querySelectorAll(".mark")
 const icon = document.querySelectorAll(".icon")
 const phnMenu = document.querySelector(".phn-menu")
-const menuBtn2 = document.querySelector(".nav-mob-btn")
+const menuBtn2 = document.querySelectorAll(".nav-mob-btn")
 
 
 
@@ -37,36 +37,38 @@ menuBtn.addEventListener("click", () => {
 
 })
 
-
-menuBtn2.addEventListener("click", () => {
-    if (isOpened) {
-
-
-        marks.forEach((mark) => {
-            mark.style.scale = 0
-        })
-        icon.forEach((ic) => {
-            ic.style.rotate = "0deg"
-        })
-
-        phnMenu.style.top = "-100vh"
-
-
-    }
-    if (!isOpened) {
-        marks.forEach((mark) => {
-            mark.style.scale = 1
-        })
-        icon.forEach((ic) => {
-            ic.style.rotate = "135deg"
-        })
-        phnMenu.style.top = "0"
-
-       
-    }
-    isOpened = !isOpened
-
+menuBtn2.forEach((mobBtn)=>{
+    mobBtn.addEventListener("click", () => {
+        if (isOpened) {
+    
+    
+            marks.forEach((mark) => {
+                mark.style.scale = 0
+            })
+            icon.forEach((ic) => {
+                ic.style.rotate = "0deg"
+            })
+    
+            phnMenu.style.top = "-100vh"
+    
+    
+        }
+        if (!isOpened) {
+            marks.forEach((mark) => {
+                mark.style.scale = 1
+            })
+            icon.forEach((ic) => {
+                ic.style.rotate = "135deg"
+            })
+            phnMenu.style.top = "0"
+    
+           
+        }
+        isOpened = !isOpened
+    
+    })
 })
+
 
 
 

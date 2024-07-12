@@ -9,6 +9,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
   /* transition: all 0.25s; */
 }
 
@@ -114,9 +115,9 @@ body {
   transition: all 0.25s;
   animation: rotation 0.25s linear 3.5s 7 forwards;
 }
-
-
-
+.pop{
+  animation: pop 500ms linear 4.2s 1 both;
+}
 .nav-pc-btn:hover {
   background-color: #2365df;
 }
@@ -134,7 +135,6 @@ body {
   rotate: 45deg;
   transition: all 0.25s;
   animation: rotation 0.25s linear 3.5s 7 forwards;
-  z-index: 9;
 }
 .nav-mob-btn:hover {
   background-color: rgb(203, 231, 255);
@@ -190,10 +190,6 @@ button {
   letter-spacing: 1.2;
   word-spacing: -1.5vw;
   animation: pop 500ms linear 4s 1 both;
-}
-
-.pop{
-  animation: pop 500ms linear 4.2s 1 both;
 }
 
 .bigEmo {
@@ -537,11 +533,11 @@ overflow: hidden;
     margin-top:100px;
 }
 .bighead {
-    font-size: 10.5vh;
-  }
-  .bigEmo {
-    font-size: 8.5vh;
-  }
+  font-size: 10.5vh;
+}
+.bigEmo {
+  font-size: 8.5vh;
+}
 .align-top{
     align-items: flex-start;
 }
@@ -555,5 +551,12 @@ overflow: hidden;
   }
   .pc-view {
     display: none;
+  }
+
+  .bighead {
+    font-size: 8.5vh;
+  }
+  .bigEmo {
+    font-size: 7vh;
   }
 }
