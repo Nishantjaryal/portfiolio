@@ -9,7 +9,6 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  overflow: hidden;
   /* transition: all 0.25s; */
 }
 
@@ -208,7 +207,6 @@ button {
 
 h1 {
   color: white;
-  font-size: 10vh;
   letter-spacing: -5px;
   font-weight: 100;
   text-transform: capitalize;
@@ -217,6 +215,7 @@ h1 {
 }
 
 .h1lnhgt {
+  font-size: 10vh;
   line-height: 92%;
 }
 
@@ -552,11 +551,8 @@ overflow: hidden;
   .pc-view {
     display: none;
   }
+  .h1lnhgt{
+    font-size: 8vh;
+  }
 
-  .bighead {
-    font-size: 8.5vh;
-  }
-  .bigEmo {
-    font-size: 7vh;
-  }
 }
