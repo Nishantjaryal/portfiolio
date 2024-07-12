@@ -548,9 +548,9 @@ overflow: hidden;
 
 @media screen and (max-width: 500px) {
 
-  .mob-top-20{
+  .mob-top{
     position: relative;
-    top:-50px
+    top:-25px
   }
   
   .mob-view {
